@@ -189,7 +189,7 @@
             });
             let sortedTeams = Object.values(aggregated).sort((a, b) => b.points - a.points);
             while (sortedTeams.length < 12) {
-                sortedTeams.push({ name: "", booyah: , kills: , points:  });
+                sortedTeams.push({ name: "-", booyah: 0, kills: 0, points: 0 });
             }
             return sortedTeams.slice(0, 12);
         }
